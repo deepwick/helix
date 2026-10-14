@@ -1,0 +1,136 @@
+# Deepwick for Helix. Colors mirror deepwick/spec palette.json.
+
+"attribute" = "yellow"
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"constant" = "cyan"
+"constant.builtin" = "blue"
+"constant.builtin.boolean" = "blue"
+"constant.character" = "orange"
+"constant.character.escape" = "gold"
+"constant.numeric" = "sage"
+"constructor" = "teal"
+"function" = "yellow"
+"function.builtin" = "yellow"
+"function.method" = "yellow"
+"function.macro" = "magenta"
+"keyword" = "blue"
+"keyword.function" = "blue"
+"keyword.storage" = "blue"
+"keyword.control" = "magenta"
+"keyword.control.import" = "magenta"
+"keyword.operator" = "magenta"
+"keyword.directive" = "foreground"
+"label" = "foreground"
+"namespace" = "teal"
+"operator" = "foreground"
+"punctuation" = "foreground"
+"punctuation.delimiter" = "foreground"
+"punctuation.bracket" = "foreground"
+"punctuation.special" = "foreground"
+"special" = "gold"
+"string" = "orange"
+"string.regexp" = "rose"
+"string.special" = "gold"
+"string.special.url" = { fg = "orange", underline = { style = "line" } }
+"string.special.symbol" = "cyan"
+"tag" = "blue"
+"type" = "teal"
+"type.builtin" = "blue"
+"type.enum" = "mint"
+"type.enum.variant" = "cyan"
+"type.parameter" = "mint"
+"variable" = "light_blue"
+"variable.builtin" = "blue"
+"variable.parameter" = "light_blue"
+"variable.other.member" = "light_blue"
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+
+"markup.heading" = { fg = "blue", modifiers = ["bold"] }
+"markup.list" = "blue"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "orange", underline = { style = "line" } }
+"markup.link.text" = "orange"
+"markup.quote" = { fg = "comment", modifiers = ["italic"] }
+"markup.raw" = "orange"
+
+"ui.background" = { fg = "foreground", bg = "background" }
+"ui.text" = "foreground"
+"ui.text.focus" = { fg = "foreground", modifiers = ["bold"] }
+"ui.text.inactive" = "muted"
+"ui.text.directory" = "blue"
+"ui.window" = "overlay"
+"ui.popup" = { fg = "foreground", bg = "surface" }
+"ui.popup.info" = { fg = "foreground", bg = "surface" }
+"ui.help" = { fg = "foreground", bg = "surface" }
+"ui.menu" = { fg = "foreground", bg = "surface" }
+"ui.menu.selected" = { bg = "selection" }
+"ui.menu.scroll" = { fg = "muted", bg = "overlay" }
+"ui.cursor" = { fg = "background", bg = "foreground" }
+"ui.cursor.primary" = { fg = "background", bg = "foreground" }
+"ui.cursor.match" = { fg = "gold", modifiers = ["bold"] }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.linenr" = "muted"
+"ui.linenr.selected" = { fg = "foreground", modifiers = ["bold"] }
+"ui.cursorline.primary" = { bg = "surface" }
+"ui.statusline" = { fg = "foreground", bg = "surface" }
+"ui.statusline.inactive" = { fg = "muted", bg = "surface" }
+"ui.statusline.normal" = { fg = "background", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "background", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "background", bg = "magenta", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "muted", bg = "surface" }
+"ui.bufferline.active" = { fg = "foreground", bg = "background", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "background" }
+"ui.virtual.whitespace" = "overlay"
+"ui.virtual.wrap" = "overlay"
+"ui.virtual.ruler" = { bg = "surface" }
+"ui.virtual.indent-guide" = "overlay"
+"ui.virtual.inlay-hint" = "muted"
+"ui.virtual.jump-label" = { fg = "gold", modifiers = ["bold"] }
+"ui.highlight" = { bg = "surface" }
+"ui.picker.header.column" = { underline = { style = "line" } }
+"ui.picker.header.column.active" = { fg = "blue", underline = { style = "line" } }
+
+"error" = "red"
+"warning" = "yellow"
+"info" = "cyan"
+"hint" = "muted"
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "muted", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+[palette]
+background = "#04041a"
+surface = "#10192C"
+overlay = "#1B2140"
+selection = "#264F78"
+muted = "#6E7899"
+comment = "#7A86A8"
+foreground = "#D4D4D4"
+blue = "#569CD6"
+light_blue = "#9CDCFE"
+cyan = "#4FC1FF"
+teal = "#4EC9B0"
+mint = "#B8D7A3"
+yellow = "#DCDCAA"
+gold = "#D7BA7D"
+orange = "#CE9178"
+rose = "#D16969"
+magenta = "#C586C0"
+sage = "#B5CEA8"
+green = "#57A64A"
+red = "#F44747"
+white = "#FFFFFF"
+diff_added = "#152424"
+diff_removed = "#341123"
+diff_changed = "#142240"
+diff_added_emph = "#1D3528"
+diff_removed_emph = "#4C1828"
+diff_text = "#1D3252"
