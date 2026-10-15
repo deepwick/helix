@@ -136,5 +136,11 @@ def test_helix_renders_sample_with_deepwick(tmp_path):
     assert style_of(text, '"__main__"')["fg"] == hexof("orange")
 
 
+def test_c_macro_definitions_and_directives():
+    t = theme()
+    assert resolve(t["function.special"]) == ("magenta", [])
+    assert resolve(t["keyword.directive"]) == ("foreground", ["bold"])
+
+
 def test_port_conventions():
     assert check_port(REPO, PALETTE.allowed_hex()) == []

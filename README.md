@@ -27,11 +27,15 @@ or try it with `:theme deepwick`.
 
 - Tree-sitter without semantic tokens: no capture distinguishes interfaces,
   enums, and structs from other types, so the Mint role appears only where a
-  language server supplies semantic tokens. Macro definitions are captured as
-  macros (Magenta) rather than preprocessor (Muted bold).
+  language server supplies semantic tokens. Function-like macro definitions
+  are Magenta; object-like macro names (`#define MAX 3`) get only the generic
+  all-caps constant capture, so they are Cyan.
+- Preprocessor directives are bold Foreground, in every language Helix gives
+  a directive capture. The macro-definition capture also covers C++
+  `static_assert` and assembler pseudo-instructions, so those are Magenta too.
 - Tree-sitter without per-language overrides: Python's `and`, `or`, `not`, `is`
-  share the capture used for `typeof`/`new`, so they take the control-flow
-  color; Python builtin types take the keyword color.
+  and membership `in` share the capture used for `typeof`/`new`, so they take
+  the control-flow color; Python builtin types take the keyword color.
 
 - Helix's Python grammar has no docstring capture, so docstrings are
   strings (Orange) rather than comments.
