@@ -31,8 +31,10 @@ or try it with `:theme deepwick`.
   are Magenta; object-like macro names (`#define MAX 3`) get only the generic
   all-caps constant capture, so they are Cyan.
 - Preprocessor directives are bold Foreground, in every language Helix gives
-  a directive capture. The macro-definition capture also covers C++
-  `static_assert` and assembler pseudo-instructions, so those are Magenta too.
+  a directive capture. The macro-definition capture (Magenta) is reused
+  elsewhere: C++ `static_assert`, NASM pseudo-instructions, every GNU
+  assembler instruction, Koka `initially`/`finally`, Clarity `define-*` forms
+  and xtc `change_port`.
 - Tree-sitter without per-language overrides: Python's `and`, `or`, `not`, `is`
   and membership `in` share the capture used for `typeof`/`new`, so they take
   the control-flow color; Python builtin types take the keyword color.
